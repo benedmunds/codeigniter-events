@@ -13,7 +13,7 @@ Events is a simple events library for CodeIgniter (all versions)
 h2. INSTALLATION
 
 1.  Copy Events.php to your application/libraries folder.
-2.  Load it like normal: @$this->load->library('parser');@ (or autoload it).
+2.  Load it like normal: @$this->load->library('events');@ (or autoload it).
 
 h2. USAGE
 
