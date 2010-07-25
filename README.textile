@@ -1,0 +1,37 @@
+h1. Events
+
+Version 1.0
+
+* Author: "Dan Horrigan":http://dhorrigan.com/
+
+Based off code by "Eric Barnes":http://ericbarnes.com
+
+h2. DESCRIPTION
+
+Events is a simple events library for CodeIgniter (all versions)
+
+h2. INSTALLATION
+
+1.  Copy Events.php to your application/libraries folder.
+2.  Load it like normal: @$this->load->library('parser');@ (or autoload it).
+
+h2. USAGE
+
+All Events functions are static.
+
+You can add a listener to an event with the register() function:
+
+<pre><code>Events::register('event_name_here', array('class_name_or_object_ref', 'method_name'));</code></pre>
+
+The second parameter of register() is an array that is callable via "call_user_func()":http://us2.php.net/manual/en/function.call-user-func.php.
+
+You trigger an Event by calling the trigger() function:
+
+<pre><code>$event_return = Events::trigger('event_name_here', $data, 'string');</code></pre>
+
+The 3rd parameter is the type of data you wish trigger() to return.  Your options are as follows:
+
+* 'array'
+* 'json'
+* 'serialized'
+* 'string' (the default)
