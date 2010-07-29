@@ -4,7 +4,7 @@ Version 1.0
 
 * Author: "Dan Horrigan":http://dhorrigan.com/
 
-Based off code by "Eric Barnes":http://ericbarnes.com
+Based off (unreleased) code by "Eric Barnes":http://ericlbarnes.com (with his permission of course).
 
 h2. DESCRIPTION
 
